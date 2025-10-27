@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reserva de Laboratório</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>Reserva de Laboratório</h1>
+    </header>
+    <main>
+        <form id="reservaForm">
+            <label for="lab">Laboratório:</label>
+            <select id="lab" name="lab" required>
+                <option value="">Selecione o laboratório</option>
+                <option value="Lab1">Laboratório 1</option>
+                <option value="Lab2">Laboratório 2</option>
+                <option value="Lab3">Laboratório 3</option>
+            </select>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required />
+
+            <label for="hora">Horário:</label>
+            <input type="time" id="hora" name="hora" required />
+
+            <button type="submit">Reservar</button>
+        </form>
+        <div id="mensagem"></div>
+
+        <section>
+            <h2>Reservas feitas</h2>
+            <div id="historicoReservas"></div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
